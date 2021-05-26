@@ -2,7 +2,10 @@ try:
     import requests, pyperclip
 except ImportError:
     print("You need pyperclip to run this code.")
-    print("You can install it with: pip3 install pyperclip")
+    print("You can install it with:")
+    print("pip3 install pyperclip")
+    print("or")
+    print("pip install pyperclip")
     exit()
 
 SUBDOMAIN = "USERNAME"
