@@ -18,5 +18,11 @@ response = requests.post(
     files={"file": (FILE_NAME, open(FILE_NAME, "rb").read())}
 )
 
-pyperclip.copy(response.json()["url"])
-print("Link Copied!")
+try:
+    pyperclip.copy(response.json()["url"])
+    print("Link Copied!")
+except:
+    print("Something went wrong, here are possible fixes:")
+    print("1. Recheck your username/subdomain")
+    print("2. Recheck your API key")
+    print("3. The file has no bytes (empty)")
