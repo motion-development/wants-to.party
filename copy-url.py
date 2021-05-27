@@ -8,9 +8,9 @@ except ImportError:
     print("pip install pyperclip")
     exit()
 
-SUBDOMAIN = "USERNAME"
-API_KEY = "KEY"
-FILE_NAME = "path/to/file"
+SUBDOMAIN = input("Enter your subdomain/username: ")
+API_KEY = input("Enter your API key (case sensitive): ")
+FILE_NAME = input("Enter your file name: ")
 
 response = requests.post(
     f"https://{SUBDOMAIN}.wants-to.party/upload", 
