@@ -1,5 +1,5 @@
-# everyone.wants-to.party!
-## API Usage for https://wants-to.party
+# 🎉 everyone.wants-to.party!
+## API Usage for https://wants-to.party 
 
 
 ### COPY-URL.PY
